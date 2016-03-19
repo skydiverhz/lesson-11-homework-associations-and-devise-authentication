@@ -1,0 +1,8 @@
+<h1>Edit Tags</h1>
+
+<%= form_for @tag, url: {action: :update} do |f| %>
+	
+<%= render 'form' %>
+<% end %>
+<br>
+<%= link_to "Back to Tags List", tags_path %>

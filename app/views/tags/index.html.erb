@@ -1,0 +1,35 @@
+<h1>Tag List</h1>
+
+
+
+<table>
+	<thead>
+		<tr>Tags</th>
+			<!-- <th>Body</th> -->
+		</tr>
+
+	</thead>
+	<tbody>
+		<% @tags.each do |tag| %>
+			<tr>
+				<!-- <td><%= link_to tag.title, tag_path(tag) %></td> -->
+				<td><%= tag.first_name, last_name %> &nbsp;</td>
+				<!-- <td><%= tag.body %></td> -->
+				<td><%= link_to 'Show', tag_path(tag) %> &nbsp;</td>
+				<td><%= link_to 'Edit', edit_tag_path(tag) %> &nbsp;</td>
+				<td><%= link_to 'Delete', delete_tag_path(tag) %> &nbsp;</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<p>
+	<%= link_to 'To enter a New tag click here!', new_tag_path %>
+
+</p>
+<%= link_to 'Link to Article List!', articles_path %>
+</p>
+
+</p>
+<%= link_to 'Link to Author List!', authors_path %>
+</p>

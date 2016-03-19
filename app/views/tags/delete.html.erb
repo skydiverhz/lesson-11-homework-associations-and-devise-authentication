@@ -1,0 +1,8 @@
+<%= form_for(@tag, :url => { :action => :destroy }, :html => { :method => :delete }) do |f| %>
+  <p>Are you sure you want to delete the tag named '<%= @tag.first_name, tag.name %>'?</p>
+  
+  <div class="footer">
+    <%= link_to 'No', :back %></div></br>
+    <button type="submit">Yes &raquo;</button>
+  </div>
+<% end %>

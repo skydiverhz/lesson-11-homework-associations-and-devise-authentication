@@ -1,4 +1,4 @@
-# Lesson 11 Homework
+# Lesson 09 Homework
 
 ## Install Instructions
 
@@ -9,5 +9,5 @@
 3) Once inside the app folder, run the following
  - ``bundle install``
  - ``bundle exec rake db:migrate``
-
+ 
 **DO NOT RUN ``rails new [project name]``** - this command has already been run on your behalf (as evidenced by the already generated rails project folders)

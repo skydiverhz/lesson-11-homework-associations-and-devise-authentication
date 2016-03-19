@@ -1,0 +1,36 @@
+<h1>Author List</h1>
+
+
+
+<table>
+	<thead>
+		<tr>
+			<th>Authors</th>
+			<!-- <th>Body</th> -->
+		</tr>
+
+	</thead>
+	<tbody>
+		<% @authors.each do |author| %>
+			<tr>
+				<!-- <td><%= link_to author.title, author_path(author) %></td> -->
+				<td><%= author.first_name, last_name %> &nbsp;</td>
+				<!-- <td><%= author.body %></td> -->
+				<td><%= link_to 'Show', author_path(author) %> &nbsp;</td>
+				<td><%= link_to 'Edit', edit_author_path(author) %> &nbsp;</td>
+				<td><%= link_to 'Delete', delete_author_path(author) %> &nbsp;</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<p>
+	<%= link_to 'To enter a New Author click here!', new_author_path %>
+
+</p>
+<%= link_to 'Link to Article List!', articles_path %>
+</p>
+
+</p>
+<%= link_to 'Link to Tag List!', tags_path %>
+</p>
